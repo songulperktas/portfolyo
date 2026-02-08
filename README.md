@@ -1,0 +1,2 @@
+# portfolyo
+Kişisel portfolyo sitem
