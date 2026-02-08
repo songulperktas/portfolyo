@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolyo | Songül PERKTAŞ</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav class="topnav">
+    <a class="brand" href="#top">Songül</a>
+    <div class="navlinks">
+      <a href="#projects">Projeler</a>
+      <a href="#about">Hakkımda</a>
+      <a href="#contact">İletişim</a>
+    </div>
+  </nav>
+
+  <!-- ÜST KISIM -->
+  <header id="top">
+    <div class="hero">
+      <h1>Songül PERKTAŞ</h1>
+
+      <div class="edu-exp">
+        <span>🎓 İstanbul Üniversitesi Cerrahpaşa – Sanal ve Artırılmış Gerçeklik</span>
+        <span>🎓 İstanbul Üniversitesi – Grafik Tasarım AÖ (devam ediyor)</span>
+      </div>
+
+      <div class="chips">
+        <span class="chip">Unity</span>
+        <span class="chip">Blender</span>
+        <span class="chip">C#</span>
+        <span class="chip">HTML / CSS / JS</span>
+      </div>
+
+      <div class="hero-cta">
+        <a class="btn" href="#projects">Projelerimi Gör</a>
+        <a class="btn ghost" href="#contact">İletişime Geç</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ALT KISIM -->
+  <main>
+
+    <!-- PROJELER -->
+    <section class="section" id="projects">
+      <h2 class="section-title">PROJELER</h2>
+
+      <div class="carousel">
+        <button class="nav-btn prev">‹</button>
+
+        <div class="viewport">
+          <div class="track" id="gameTrack"></div>
+        </div>
+
+        <button class="nav-btn next">›</button>
+      </div>
+
+      <p class="hint">Kartlara tıkla veya ← → kullan • ESC ile kapat</p>
+    </section>
+
+    <!-- HAKKIMDA -->
+    <section class="section" id="about">
+      <h2 class="section-title">Hakkımda</h2>
+
+      <div class="panel">
+        <p class="lead">
+          Unity ile oyun/VR geliştirme yapıyorum. XR Interaction Toolkit, UI sistemleri, oyun mekaniği ve sahne yönetimi üzerine çalışıyorum.
+          Blender ile temel modelleme/asset düzenleme yapabiliyorum.
+        </p>
+
+        <div class="stats">
+          <div class="stat">
+            <div class="stat-title">Odak</div>
+            <div class="stat-value">Unity • XR • UI</div>
+          </div>
+          <div class="stat">
+            <div class="stat-title">Hedef</div>
+            <div class="stat-value">Proje bazlı portföy</div>
+          </div>
+          <div class="stat">
+            <div class="stat-title">Çalışma</div>
+            <div class="stat-value">Takım + bireysel</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İLETİŞİM -->
+    <section class="section" id="contact">
+      <h2 class="section-title">İletişim</h2>
+
+      <div class="panel">
+        <p class="lead">Aşağıya linklerini ekleyebilirsin (GitHub / LinkedIn / itch.io / CV PDF).</p>
+
+        <div class="contact-row">
+          <a class="mini-btn" href="#" target="_blank" rel="noreferrer">GitHub</a>
+          <a class="mini-btn" href="#" target="_blank" rel="noreferrer">LinkedIn</a>
+          <a class="mini-btn" href="#" target="_blank" rel="noreferrer">itch.io</a>
+          <a class="mini-btn" href="#" target="_blank" rel="noreferrer">CV</a>
+        </div>
+      </div>
+    </section>
+5
+  </main>
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+    <img class="lightbox-img" id="lightboxImg" alt="">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">✕</button>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
