@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", () => {
   title: "3D platform oyunu",
   subtitle: "Unity • 3D",
   cover: "resim/platform8.jpeg",
-  desc: "platform oyunu.",
+  desc: "Bu proje, Unity kullanılarak geliştirilmiş bir 3D platform oyunudur. Oyun sürecinde oyuncu, engellerle dolu bir seviyede karakterini kontrol ederek ilerlemeye çalışır. Amaç; doğru zamanda hareket etmek, çevresel tehditlerden kaçınmak ve bölümü başarıyla tamamlamaktır. <br> Oyun mekanikleri; hareket, zıplama, engellerden kaçma ve çarpışma tabanlı etkileşimler üzerine kuruludur. Karakterin engellere veya tehlikeli nesnelere temas etmesi durumunda can sistemi devreye girer ve oyuncuya görsel geri bildirimler sağlanır. Bu sayede oyuncu, yaptığı hataların sonuçlarını anında gözlemleyebilir." ,
   groups: [
     {
       images: [
