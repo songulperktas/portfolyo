@@ -53,9 +53,10 @@ document.addEventListener("DOMContentLoaded", () => {
         "resim/platform1.jpeg",
         "resim/platform2.jpeg",
         "resim/platform9.jpeg",
-        "resim/platform10.jpeg"
+        "resim/platform10.jpeg",
+        "resim/platform17.png"
       ],
-      text: "..."
+      text: "Oyunda kullandığım UI sistemlerini görüyorsunuz. Renkleri yine oyun temasıyla aynı tutmaya çalıştım. oyunun girişteki ekranı 1 ve 2. resimlerde gördüğünüz gibi kullanım açısından kolaylaştırmak için ortaya büyük bir play butonu koydum. Karakter seçimi yaptıktan sonra karakterimiz solda beliriyor. Kullanıcı da neyi seçtiğini görmüş oluyor. Ayarlar menüsü ile oyunun sesini kapatıp açılabiliyor ve "
     },
     {
       images: [
