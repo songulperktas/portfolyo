@@ -292,10 +292,17 @@ main{ padding:70px 0 90px; }
 }
 
 .card.is-open .details{
-  max-height:1000px; /* ✅ grup + görseller uzun diye büyük tuttum */
-  opacity:1;
-  padding:16px;
-  border-top:1px solid var(--line);
+  max-height: 520px;       /* ✅ kart içinde gösterilecek yükseklik */
+  overflow-y: auto;        /* ✅ içerik uzarsa kart içinde scroll */
+  -webkit-overflow-scrolling: touch; /* ✅ mobilde yumuşak kaydırma */
+  opacity: 1;
+  padding: 16px;
+  border-top: 1px solid var(--line);
+}
+.details::-webkit-scrollbar{ width: 10px; }
+.details::-webkit-scrollbar-thumb{
+  background: rgba(255,255,255,.18);
+  border-radius: 999px;
 }
 
 .details p{

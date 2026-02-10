@@ -46,24 +46,24 @@ document.addEventListener("DOMContentLoaded", () => {
   title: "3D platform oyunu",
   subtitle: "Unity • 3D",
   cover: "resim/platform8.jpeg",
-  desc: "Bu proje, Unity kullanılarak geliştirilmiş bir 3D platform oyunudur. Oyun sürecinde oyuncu, engellerle dolu bir seviyede karakterini kontrol ederek ilerlemeye çalışır. Amaç; doğru zamanda hareket etmek, çevresel tehditlerden kaçınmak ve bölümü başarıyla tamamlamaktır. <br> Oyun mekanikleri; hareket, zıplama, engellerden kaçma ve çarpışma tabanlı etkileşimler üzerine kuruludur. Karakterin engellere veya tehlikeli nesnelere temas etmesi durumunda can sistemi devreye girer ve oyuncuya görsel geri bildirimler sağlanır. Bu sayede oyuncu, yaptığı hataların sonuçlarını anında gözlemleyebilir." ,
+  desc: "Bu proje, Unity kullanılarak geliştirilmiş bir 3D platform oyunudur. Oyun sürecinde oyuncu, engellerle dolu bir seviyede karakterini kontrol ederek ilerlemeye çalışır. Amaç; doğru zamanda hareket etmek, çevresel tehditlerden kaçınmak ve bölümü başarıyla tamamlamaktır. <br> Oyun mekanikleri; hareket, zıplama, engellerden kaçma ve çarpışma tabanlı etkileşimler üzerine kuruludur. Karakterin engellere veya tehlikeli nesnelere temas etmesi durumunda can sistemi devreye girer ve oyuncuya görsel geri bildirimler sağlanır. Bu sayede oyuncu, yaptığı hataların sonuçlarını anında gözlemleyebilir. not: Oyun hala geliştirme aşamasındadır. Üzerinde çalışacağım ses effectleri, daha güçlü arayüz ve coin sistemi olacaktır." ,
   groups: [
     {
       images: [
         "resim/platform1.jpeg",
+        "resim/platform17.png",
         "resim/platform2.jpeg",
         "resim/platform9.jpeg",
         "resim/platform10.jpeg",
-        "resim/platform17.png"
       ],
-      text: "Oyunda kullandığım UI sistemlerini görüyorsunuz. Renkleri yine oyun temasıyla aynı tutmaya çalıştım. oyunun girişteki ekranı 1 ve 2. resimlerde gördüğünüz gibi kullanım açısından kolaylaştırmak için ortaya büyük bir play butonu koydum. Karakter seçimi yaptıktan sonra karakterimiz solda beliriyor. Kullanıcı da neyi seçtiğini görmüş oluyor. Ayarlar menüsü ile oyunun sesini kapatıp açılabiliyor ve "
+      text: "Oyunda kullandığım UI sistemlerini görüyorsunuz. Renkleri yine oyun temasıyla aynı tutmaya çalıştım. oyunun girişteki ekranı 1 ve 2. resimlerde gördüğünüz gibi kullanım açısından kolaylaştırmak için ortaya büyük bir play butonu koydum. Karakter seçimi yaptıktan sonra karakterimiz solda beliriyor. Kullanıcı da neyi seçtiğini görmüş oluyor. Ayarlar menüsü ile oyunun sesiyle alakalı ayarlar yapılabiliyor. Bölümler ksımında şuanlık 3 bölüm oluşuyor ve oyunun asıl uzun vadeli oynanılabilirliğini sağlayacak olan coin sistemi burda devreye girecektir. 3 bölümden sonrası için kazanılan coinler kullanılmalı olacaktır. Aynı şekilde karakterler için de geçerli olacaktır. Çalışmalarım sürmektedir."
     },
     {
       images: [
         "resim/platform5.jpeg",
         "resim/platform13.png"
       ],
-      text: "..."
+      text: "Oyun içerisindeki UI lar da ana menüdeki ayarlar mantığı ile yapılmıştır. Sol üst köşede bulunan 'oyunu durdurma' mantığı ile çalışan bir sistem ile tekrar bölümü başlatma, geri butonuyla devam etme, quit ile ana menüye dönüş ve ses ayarlarından oluşmaktadır. Bir sonraki panelim finsh paneldir ve karakter bayrağa ulaştığı zaman tetiklenmektedir. Bir sonraki levele geçebilir veya oyunu tekrar oyna diyebilir."
     },
     {
       images: [
@@ -74,7 +74,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "resim/platform15.png",
         "resim/platform16.png"
       ],
-      text: "..."
+      text: "Oyun içeriği hakkındaki birçok objeyi ve çalışma prensibini görebiliyorsunuz. Oyunda farklı farklı zenginleştirmek amaçlı engeller koydum. Coinler de kimi zaman daha zor yerde kimi zaman daha kolay yerde konumlandırıldı."
     },
     {
       images: [
@@ -82,7 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
         "resim/platform6.jpeg",
         "resim/platform7.jpeg"
       ],
-      text: "..."
+      text: "Can sistemi de bu şekilde kullanıcıya aktarılmaktadır. Engele çarptığı zaman saliselik rengi kırmızıya fönmekte ve daha sonra eski halini almaktadır."
     }
   ]
 },
@@ -92,33 +92,27 @@ document.addEventListener("DOMContentLoaded", () => {
   title: "VR İngilizce Uygulaması",
   subtitle: "Unity • VR",
   cover: "resim/vr5.jpeg",
-  desc: "VR eğitim oyunu.",
+  desc: "Unity5 ve XR Interaction Toolkit kullanılarak geliştirilen etkileşimli yeni öğrenciler için bir İngilizce öğrenme uygulamasıdır. Kullanıcı, sanal bir ortamda (market) verilen görev listesindeki nesneleri bulup toplayarak kelime öğrenir. Her nesne etkileşimli şekilde tutulabilir (XR Grab Interactable) ve doğru/yanlış seçimlerde anlık geri bildirim alır. Uygulama; rastgele oluşturulan görev listesi, skor ve süre takibi, hata yönetimi, tamamlanma ekranı ve sonuç/puan tablosu gibi oyunlaştırılmış bileşenlerle öğrenme sürecini daha motive edici hale getirir. Oyundaki modellerin %70 i kendi modellerimdir.",
   groups: [
     {
       
-      text: "...",
+      text: "Girişte bizi market havası katmak için elektronik market kasası ve sepetler karşılıyor. Daha sorna duvarda Welcome yazılı etkileşimli bir tablet bulunuyor. Bu tablet kullanıcının öğrenmesi ve nesneyi tanımadığı zaman veya nesnenin ingilizcesini bulamadığı zaman kullanabileceği bir tür rehber özelliği oluşturuyor. Etkileşime girerek nesenin görseline ve ismine ulaşabiliyorsunuz.",
       images: [
         "resim/vr1.jpeg",
-        "resim/vr2.jpeg"
-      ]
-    },
-    {
-      
-      text: "...",
-      images: [
+        "resim/vr2.jpeg",
         "resim/vr3.jpeg"
       ]
     },
     {
       
-      text: "...",
+      text: "Kapının hemen sağında bizi yine interaktif tablet karşılıyor. Tabletle etkileşime girildiğinde bize rastgele Check List veriyor. Her yeni uygulamayı başlattığında 40'tan fazla ürün random yeni liste oluşturuluyor. ",
       images: [
         "resim/vr4.jpeg"
       ]
     },
     {
       
-      text: "...",
+      text: "Listede ismi görünen ürün ile etkileşime girildiği zaman o ürünün yanındaki boşlukta bir tik oluşuyor. Tıpkı resimdeki gibi yağa dokunulduğu zaman listede İngilizce karşılığının yanında tik olması gibi.",
       images: [
         "resim/vr5.jpeg",
         "resim/vr6.jpeg"
@@ -126,7 +120,7 @@ document.addEventListener("DOMContentLoaded", () => {
     },
     {
       
-      text: "...",
+      text: " Puan sisteminde de her doğru için 100, her yanlış seçim için -50 puan almaktadır ve eğer üç yanlış yaparsa Game Over yazısı ile karşılaşılmakta. Eğer listeyi tamamlarsa oyuncunun ne kadar sürede ve ne kadar puan aldığının geri bildirimini veriyoruz.",
       images: [
         "resim/vr7.jpeg",
         "resim/vr8.jpeg"
