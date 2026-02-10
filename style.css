@@ -421,4 +421,36 @@ main{ padding:70px 0 90px; }
 .card.is-active .meta h3{
   color:#1e0234;
 }
+/* ===== STORE LINKS ===== */
+.store-links{
+  margin-bottom:14px;
+}
+
+.store-title{
+  margin:0 0 8px;
+  font-size:13px;
+  color:var(--muted);
+}
+
+.store-row{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+}
+
+.store-btn{
+  padding:8px 14px;
+  border-radius:14px;
+  border:1px solid var(--line);
+  background:rgba(255,255,255,.12);
+  color:var(--text);
+  font-size:13px;
+  text-decoration:none;
+  transition:transform .2s ease, background .2s ease;
+}
+
+.store-btn:hover{
+  background:rgba(255,255,255,.22);
+  transform:translateY(-1px);
+}
 
