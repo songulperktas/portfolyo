@@ -338,15 +338,20 @@ main{ padding:70px 0 90px; }
 }
 
 /* ================= MOBİL ================= */
-@media(max-width:900px){
-  .stats{ grid-template-columns: 1fr; }
-}
-
 @media(max-width:768px){
   header{ height:auto; padding:40px 20px; }
   .hero h1{ font-size:28px; }
 
-  .nav-btn{ display:none; }
+  /* ✅ oklar mobilde görünsün */
+  .nav-btn{
+    display:grid;
+    width:40px;
+    height:40px;
+    font-size:24px;
+    background:rgba(255,255,255,.22);
+  }
+  .nav-btn.prev{ left:10px; }
+  .nav-btn.next{ right:10px; }
 
   .card{
     width:320px;
@@ -361,6 +366,7 @@ main{ padding:70px 0 90px; }
     height:120px;
   }
 }
+
 /* ================= LIGHTBOX ================= */
 .lightbox{
   position:fixed;
