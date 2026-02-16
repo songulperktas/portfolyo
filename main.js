@@ -97,7 +97,9 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "ModeFrenzy",
       subtitle: "Unity • 3D",
       cover: "resim/modefrenzy8.png",
-      desc: "...",
+      desc: "Mode Frenzy, hızlı tempolu oynanışıyla öne çıkan bir 3D aksiyon-macera oyunudur. Oyunda hem tek oyunculu deneyim yaşayabilir hem de çevrimiçi modlarda gerçek oyuncularla rekabet edebilirsiniz.Karakter özelleştirme, taktiksel savaşlar ve özel etkinliklerle zenginleştirilen yapısı sayesinde oyuncuya dinamik bir deneyim sunar. Yüksek kaliteli 3D grafikler ve gerçekçi fizik sistemiyle tasarlanan Mode Frenzy, rekabetçi oyun mekaniğini eğlenceyle birleştirir.",
+
+
       links: [
         {
           label: "App Store",
@@ -111,7 +113,7 @@ document.addEventListener("DOMContentLoaded", () => {
       groups: [
         {
           images: ["resim/modefrenzy1.png"],
-          text: "..."
+          text: "Oyun içinde birden çok oyun bulunmaktadır. İster tek ister ise multiplayer şekilde oyunu oynayabilirsiniz. Karakter de seçebilirsiniz. Ayrıca dil destekleri de bulunmaktadır."
         },
         {
           images: [
@@ -120,7 +122,7 @@ document.addEventListener("DOMContentLoaded", () => {
             "resim/modefrenzy5.png",
             "resim/modefrenzy9.png"
           ],
-          text: "..."
+          text: "Oyun içeriğinde 4 oyunumuz bulunmaktadır. Bu oyunlar dövüş, araba yarışı, platforma ilk tırmananın kazandığı ve en hızlı  item toplama yarışı olarak dinamik oyunlarla dolu bir içerik sunmaktadır. Ayrıca arkadaşlarınıza savaş açabileceğiniz, yavaşlatabileceğiniz önünü kesebileceğiiniz butonlar da bulunmaktadır. "
         }
       ]
     }
