@@ -13,6 +13,7 @@
   <nav class="topnav">
     <div class="navlinks">
       <a href="#projects">Projeler</a>
+      <a href="#videos">Oyun Videoları</a>
       <a href="#about">Hakkımda</a>
       <a href="#contact">İletişim</a>
     </div>
@@ -37,6 +38,7 @@
 
       <div class="hero-cta">
   <a class="btn" href="#projects">Projelerimi Gör</a>
+  <a class="btn ghost" href="#videos">Oyun Videoları</a>
 
   <!-- ✅ yeni buton -->
   <a class="btn ghost" href="#about">Hakkımda</a>
@@ -65,6 +67,42 @@
 
       <p class="hint">Kartlara tıkla veya ← → kullan • ESC ile kapat</p>
     </section>
+
+    <!-- OYUN VİDEOLARI -->
+<section class="section" id="videos">
+  <h2 class="section-title">Oyun Videoları</h2>
+
+  <div class="panel">
+    <div class="video-grid">
+
+      <figure class="video-card">
+        <figcaption class="video-title">Platform</figcaption>
+        <video class="video" controls preload="metadata">
+          <source src="resim/platform.mp4" type="video/mp4">
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+      </figure>
+
+      <figure class="video-card">
+        <figcaption class="video-title">VR</figcaption>
+        <video class="video" controls preload="metadata">
+          <source src="resim/vr.mp4" type="video/mp4">
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+      </figure>
+
+      <figure class="video-card">
+        <figcaption class="video-title">ModeFrenzy</figcaption>
+        <video class="video" controls preload="metadata">
+          <source src="resim/modefrenzy.mp4" type="video/mp4">
+          Tarayıcınız video etiketini desteklemiyor.
+        </video>
+      </figure>
+
+    </div>
+  </div>
+</section>
+
 
     <!-- HAKKIMDA -->
     <section class="section" id="about">
@@ -98,7 +136,6 @@ Amacım; teknik yetkinlik, yaratıcı üretim ve kullanıcı deneyimini bir aray
       <a class="mini-btn" href="https://github.com/songulperktas" target="_blank" rel="noreferrer">GitHub</a>
       <a class="mini-btn" href="https://www.linkedin.com/public-profile/settings/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact_info%3Bqz0gy9aOQ%2FuuGqNpAvBPog%3D%3D" target="_blank" rel="noreferrer">LinkedIn</a>
       <a href="mailto:songulperktasss@gmail.com" class="mini-btn">E-Posta</a>
-</a>
 
     </div>
   </div>
@@ -108,10 +145,16 @@ Amacım; teknik yetkinlik, yaratıcı üretim ve kullanıcı deneyimini bir aray
   </main>
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox">
-    <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
-    <img class="lightbox-img" id="lightboxImg" alt="">
-    <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">✕</button>
-  </div>
+  <div class="lightbox-backdrop" id="lightboxBackdrop"></div>
+
+  <img class="lightbox-img" id="lightboxImg" alt="">
+  
+  <!-- ✅ Video lightbox -->
+  <video class="lightbox-video" id="lightboxVideo" controls></video>
+
+  <button class="lightbox-close" id="lightboxClose" aria-label="Kapat">✕</button>
+</div>
+
 
   <script src="main.js"></script>
 </body>
