@@ -516,4 +516,56 @@ main{ padding:70px 0 90px; }
   background: rgba(255,255,255,.18);
   transform: translateY(-1px);
 }
+/* ================= OYUN VİDEOLARI ================= */
+.video-grid{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+}
+
+.video-card{
+  margin:0;
+  border:1px solid var(--line);
+  border-radius:18px;
+  background: rgba(255,255,255,.06);
+  padding: 12px;
+}
+
+.video-title{
+  text-align:center;
+  color: var(--text);
+  font-weight: 600;
+  margin: 6px 0 10px;
+}
+
+.video{
+  width:100%;
+  height: 240px;
+  border-radius:14px;
+  display:block;
+  background: rgba(0,0,0,.35);
+}
+
+/* mobilde alt alta */
+@media (max-width: 768px){
+  .video-grid{
+    grid-template-columns: 1fr;
+  }
+  .video{
+    height: 220px;
+  }
+}
+/* Lightbox video */
+.lightbox-video{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  width:min(92vw, 980px);
+  max-height:86vh;
+  border-radius:18px;
+  border:1px solid rgba(255,255,255,.18);
+  background:rgba(20,24,40,.55);
+  display:none; /* default kapalı */
+}
 

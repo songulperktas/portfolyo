@@ -269,34 +269,94 @@ document.addEventListener("DOMContentLoaded", () => {
   // ===== LIGHTBOX (galeri resmine tıklayınca büyüt) =====
   const lightbox = document.getElementById("lightbox");
   const lightboxImg = document.getElementById("lightboxImg");
+  const lightboxVideo = document.getElementById("lightboxVideo");
   const lightboxBackdrop = document.getElementById("lightboxBackdrop");
   const lightboxClose = document.getElementById("lightboxClose");
 
-  function openLightbox(src, alt) {
-    if (!lightbox || !lightboxImg) return;
-    lightboxImg.src = src;
-    lightboxImg.alt = alt || "";
-    lightbox.classList.add("is-open");
-    document.body.style.overflow = "hidden";
+  function openLightbox({ type, src, alt }) {
+  if (!lightbox) return;
+
+  lightbox.classList.add("is-open");
+  document.body.style.overflow = "hidden";
+
+  // önce ikisini de kapat
+  if (lightboxImg) {
+    lightboxImg.style.display = "none";
+    lightboxImg.src = "";
+    lightboxImg.alt = "";
   }
 
-  function closeLightbox() {
-    if (!lightbox) return;
-    lightbox.classList.remove("is-open");
-    if (lightboxImg) lightboxImg.src = "";
-    document.body.style.overflow = "";
+  if (lightboxVideo) {
+    lightboxVideo.style.display = "none";
+    lightboxVideo.pause();
+    lightboxVideo.removeAttribute("src");
+    lightboxVideo.load();
   }
+
+  // type'a göre aç
+  if (type === "img" && lightboxImg) {
+    lightboxImg.src = src;
+    lightboxImg.alt = alt || "";
+    lightboxImg.style.display = "block";
+  }
+
+  if (type === "video" && lightboxVideo) {
+    lightboxVideo.src = src;
+    lightboxVideo.style.display = "block";
+    lightboxVideo.play().catch(() => {});
+  }
+}
+
+
+  function closeLightbox() {
+  if (!lightbox) return;
+
+  lightbox.classList.remove("is-open");
+  document.body.style.overflow = "";
+
+  if (lightboxImg) {
+    lightboxImg.src = "";
+    lightboxImg.style.display = "none";
+  }
+
+  if (lightboxVideo) {
+    lightboxVideo.pause();
+    lightboxVideo.removeAttribute("src");
+    lightboxVideo.load();
+    lightboxVideo.style.display = "none";
+  }
+}
+
 
   // Galerideki resimlere click delegasyonu
   document.addEventListener("click", (e) => {
-    const img = e.target.closest(".gallery img");
-    if (!img) return;
-
+  // ✅ Galeri resimleri
+  const img = e.target.closest(".gallery img");
+  if (img) {
     e.preventDefault();
-    e.stopPropagation(); // ✅ kart click'ini tetiklemesin
+    e.stopPropagation();
+    openLightbox({
+      type: "img",
+      src: img.getAttribute("src"),
+      alt: img.getAttribute("alt")
+    });
+    return;
+  }
 
-    openLightbox(img.getAttribute("src"), img.getAttribute("alt"));
-  });
+  // ✅ Videolar (Oyun Videoları bölümündeki)
+  const vid = e.target.closest("#videos video");
+  if (vid) {
+    e.preventDefault();
+    e.stopPropagation();
+    openLightbox({
+      type: "video",
+      src: vid.querySelector("source")?.getAttribute("src") || vid.getAttribute("src"),
+      alt: ""
+    });
+    return;
+  }
+});
+
 
   lightboxBackdrop?.addEventListener("click", closeLightbox);
   lightboxClose?.addEventListener("click", closeLightbox);
